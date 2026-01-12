@@ -1,0 +1,185 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+body {
+  background-color: #081b29;
+  color: #ededed;
+}
+.fristdiv {
+  background-color: transparent;
+
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 3s;
+}
+.secdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 4rem;
+}
+.secdiv a:hover,
+.secdiv a.active {
+  color: #00abf0;
+}
+.Name {
+  margin-left: 10rem;
+  font-size: 30px;
+  position: relative;
+}
+.Name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+.Name:hover {
+  color: #00abf0;
+}
+.padding {
+  padding-right: 4rem;
+}
+.fristdiv:hover {
+  cursor: pointer;
+}
+/* main part */
+.Home {
+  background: url("myimg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+}
+.home-contant {
+  max-width: 560px;
+}
+.home-contant h1 {
+  position: relative;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.home-contant h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #00abf0;
+}
+.home-contant p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+.plassure {
+  font-weight: 600;
+}
+.home-contant .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+.btns a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #00abf0;
+  border: 2px, solid, #00abf0;
+  width: 150px;
+  height: 100%;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btns a:hover {
+  color: #00abf0;
+}
+.btns a:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+.btns a:nth-child(2):hover {
+  color: #081b29;
+}
+.btns a:nth-child(2)::before {
+  background: #00abf0;
+}
+.btns a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btns a:hover::before {
+  width: 100%;
+}
+
+.icons {
+  position: absolute;
+  bottom: 50px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.icons a {
+  position: relative;
+  display: inline-flex;
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  border: 2px, solid, #00abf0;
+  border-radius: 50%;
+  font-size: 35px;
+  color: #00abf0;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.icons a:hover {
+  color: #081b29;
+}
+.icons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.icons a:hover::before {
+  width: 100%;
+}
+/* Key Frams animation */
+@keyframes showRight {
+  100% {
+    width: 0;
+}
