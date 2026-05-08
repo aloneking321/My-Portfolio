@@ -1,2 +1,2 @@
 # My-Portfolio
-# This is My fristr work in Github
+# This is My frist work in Github
